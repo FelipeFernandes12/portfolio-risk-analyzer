@@ -1,15 +1,11 @@
-# portfolio-risk-analyzer
-This Python script performs basic portfolio risk analysis by processing a collection of financial assets, cleaning corrupted entries, calculating risk scores based on asset type and volatility, and classifying assets into risk categories.
+# Portfolio Risk Analyzer
 
-The program demonstrates:
+A modular Python data pipeline built to ingest, clean, and analyze multi-asset financial portfolios.
 
-Data validation and cleaning
-Dictionary and list manipulation
-Custom risk scoring logic
-Function creation and reuse
-Control flow with loops and conditional statements
-Financial data processing concepts
+## Key Features
+- **Data Ingestion Engine:** Utilizes type-checking algorithms to dynamically isolate and clean corrupted data streams.
+- **Risk Evaluation System:** Maps volatility metrics against rigid asset-class multipliers to generate quantitative risk vectors.
+- **Defensive Design:** Implements dictionary safety fallbacks to prevent pipeline failures on unexpected asset data types.
 
-Assets are assigned risk multipliers according to their type (e.g., stocks and cryptocurrencies), allowing the script to generate Low Risk, Moderate Risk, and High Risk alerts based on institutional-style risk thresholds.
-
-This project was developed as a Python learning exercise focused on data processing, financial analysis, and clean programming practices.
+## Tech Stack
+- Core Python 3 (Lists, Dictionaries, While/For Loops, Modular Functions)
