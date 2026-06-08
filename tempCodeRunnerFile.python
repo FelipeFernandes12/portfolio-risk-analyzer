@@ -1,0 +1,16 @@
+def calculate_tax(amount):
+    tax_rate = 0.15  # Tax rate of 15%
+    tax = amount * tax_rate
+    return tax
+
+def process_invoice(gross_sales, discount):
+    net_sales = gross_sales - discount
+    tax = calculate_tax(net_sales)
+    total_amount = net_sales + tax
+    return total_amount
+
+# Example usage
+gross_sales = float(input("Enter gross sales amount: "))
+discount = float(input("Enter discount amount: "))
+total = process_invoice(gross_sales, discount)
+print(f"The total amount is: {total:.2f}")
